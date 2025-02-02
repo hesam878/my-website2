@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <title>کلاس نهم</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* استایل پایه */
+    body {
+      font-family: 'Iranian Sans', sans-serif;
+      direction: rtl;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* برای جلوگیری از سرریز در صفحات کوچک */
+      justify-content: center; /* مرکز‌چینی عناصر */
+      padding: 20px;
+    }
+
+    .card {
+      background-color: rgba(219, 215, 215, 0.397);
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      font-size: 50px; /* اندازه فونت پیش‌فرض */
+      color: #4CAF50;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden; /* جلوگیری از بیرون زدن محتوا */
+      min-height: 250px; /* حداقل ارتفاع کارت */
+    }
+
+    .card img {
+      max-width: 100%; /* تصویر کاملاً داخل کارت جا بگیرد */
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover; /* تصویر به درستی داخل کارت قرار گیرد */
+    }
+
+    .card:hover {
+      transform: scale(1.05); /* افزایش اندازه هنگام هاور */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Media Query برای موبایل */
+    @media (max-width: 480px) {
+      .card {
+        width: 120px; /* عرض کارت کاهش یافته */
+        font-size: 14px; /* اندازه فونت کاهش یافته */
+        min-height: 150px; /* حداقل ارتفاع کارت */
+        padding: 8px; /* فضای داخلی کمتر */
+      }
+
+      .card img {
+        max-width: 100%; /* تصویر کاملاً داخل کارت جا بگیرد */
+        height: auto;
+        object-fit: cover; /* تصویر به درستی داخل کارت قرار گیرد */
+      }
+
+      h1 {
+        font-size: 20px; /* اندازه عنوان کاهش یافته */
+      }
+
+      .card div {
+        font-size: 12px; /* اندازه متن پایین کارت کاهش یافته */
+        white-space: nowrap; /* جلوگیری از شکستن خط متن */
+        overflow: hidden; /* جلوگیری از بیرون زدن متن */
+        text-overflow: ellipsis; /* اضافه شدن `...` به متن‌های طولانی */
+      }
+    }
+
+    /* Media Query برای تبلت */
+    @media (min-width: 481px) and (max-width: 1023px) {
+      .card {
+        width: 150px; /* عرض کارت کاهش یافته */
+        font-size: 24px; /* اندازه فونت کاهش یافته */
+        min-height: 200px; /* حداقل ارتفاع کارت */
+        padding: 10px; /* فضای داخلی کمتر */
+      }
+
+      h1 {
+        font-size: 24px; /* اندازه عنوان کاهش یافته */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>درس خود را انتخاب کنید</h1>
+  <div class="container">
+    <!-- کارت علوم -->
+    <a href="" style="text-decoration: none">
+      <div class="card" style="color: #4CAF50;">
+        <img src="oloom2.jpg" alt="علوم">
+        <div>علوم</div>
+      </div>
+    </a>
+
+    <!-- کارت ریاضی -->
+    <a href="" style="text-decoration: none">
+      <div class="card" style="color: #2196F3;">
+        <img src="ryazi2.jpg" alt="ریاضی">
+        <div>ریاضی</div>
+      </div>
+    </a>
+
+    <!-- کارت عربی -->
+    <a href="" style="text-decoration: none">
+      <div class="card" style="color: #F44336;">
+        <img src="arabi2.jpg" alt="عربی">
+        <div>عربی</div>
+      </div>
+    </a>
+
+    <!-- کارت مطالعات اجتماعی -->
+    <a href="" style="text-decoration: none">
+      <div class="card" style="color: #795548;">
+        <img src="motaleat2.jpg" alt="مطالعات اجتماعی">
+        <div style="padding-top: 15px;">مطالعات اجتماعی</div>
+      </div>
+    </a>
+
+    <!-- کارت قرآن -->
+    <a href="" style="text-decoration: none">
+      <div class="card" style="color: #FFD700;">
+        <img src="ghoran2.jpg" alt="قرآن">
+        <div>قرآن</div>
+      </div>
+    </a>
+
+    <!-- کارت انگلیسی -->
+    <a href="" style="text-decoration: none">
+      <div class="card" style="color: #9C27B0;">
+        <img src="English2.jpg" alt="انگلیسی">
+        <div>انگلیسی</div>
+      </div>
+    </a>
+
+    <!-- کارت آمادگی دفاعی -->
+    <a href="" style="text-decoration: none">
+      <div class="card" style="color: #FF9800;">
+        <img src="defaie.jpg" alt="آمادگی دفاعی">
+        <div style="padding: 10px;">آمادگی دفاعی</div>
+      </div>
+    </a>
+
+    <!-- کارت پیام‌های آسمانی -->
+    <a href="" style="text-decoration: none">
+      <div class="card" style="color: #00BCD4;">
+        <img src="payam2.jpg" alt="پیام‌های آسمانی">
+        <div style="padding-top: 20px;">پیام‌های آسمانی</div>
+      </div>
+    </a>
+
+    <!-- کارت کار و فناوری -->
+    <a href="" style="text-decoration: none">
+      <div class="card" style="color: #607D8B;">
+        <img src="fanavari2.jpg" alt="کار و فناوری">
+        <div style="padding-top: 13px;">کار و فناوری</div>
+      </div>
+    </a>
+
+    <!-- کارت فارسی -->
+    <a href="" style="text-decoration: none">
+      <div class="card" style="color: #E91E63;">
+        <img src="farsi2.jpg" alt="فارسی">
+        <div>فارسی</div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
